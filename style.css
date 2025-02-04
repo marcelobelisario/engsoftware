@@ -1,0 +1,545 @@
+:root {
+    --primary-color: #8e44ad;
+    --secondary-color: #9b59b6;
+    --background-color: #1a1a2e;
+    --text-color: #2c3e50;
+    --gray-light: #bdc3c7;
+    --white: #ffffff;
+    --orange: #ff9f1c;
+    --red: #e74c3c;
+    --purple: #9c27b0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    min-height: 100vh;
+}
+
+.app {
+    max-width: 480px;
+    margin: 0 auto;
+    min-height: 100vh;
+    background-color: var(--white);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Top Bar Styles */
+.top-bar {
+    background-color: var(--background-color);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--white);
+}
+
+.menu-btn, .back-btn {
+    background: none;
+    border: none;
+    color: var(--white);
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.logo {
+    font-size: 1.5rem;
+}
+
+/* Content Styles */
+.content {
+    flex: 1;
+    padding: 1rem;
+}
+
+.welcome-text {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    color: var(--text-color);
+}
+
+.search-bar {
+    background: #f5f6fa;
+    padding: 0.8rem 1rem;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.search-bar input {
+    border: none;
+    background: none;
+    flex: 1;
+    margin-left: 0.5rem;
+    font-size: 1rem;
+}
+
+.search-bar input:focus {
+    outline: none;
+}
+
+/* Navigation Tabs */
+.nav-tabs {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+    border-bottom: 1px solid var(--gray-light);
+    padding-bottom: 0.5rem;
+}
+
+.nav-tabs a {
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 0.5rem 1rem;
+    position: relative;
+}
+
+.nav-tabs a.active {
+    color: var(--orange);
+}
+
+.nav-tabs a.active::after {
+    content: '';
+    position: absolute;
+    bottom: -0.5rem;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--orange);
+}
+
+/* Courses Grid */
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.course-card {
+    background: #f5f6fa;
+    border-radius: 15px;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.course-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 1rem;
+}
+
+.course-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.enter-btn {
+    background-color: var(--red);
+    color: var(--white);
+    border: none;
+    padding: 0.5rem 2rem;
+    border-radius: 20px;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+/* Challenges List */
+.challenges-list {
+    margin-top: 1rem;
+}
+
+.challenge-card {
+    background: #f5f6fa;
+    border-radius: 15px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.challenge-card h3 {
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    color: var(--text-color);
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.challenge-details {
+    margin: 1rem 0;
+}
+
+.challenge-details p {
+    margin: 0.5rem 0;
+    color: var(--text-color);
+}
+
+.challenge-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.accept-btn, .reject-btn {
+    flex: 1;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.accept-btn {
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+.reject-btn {
+    background-color: var(--gray-light);
+    color: var(--text-color);
+}
+
+/* Bottom Navigation */
+.bottom-nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    background-color: var(--white);
+    border-top: 1px solid var(--gray-light);
+}
+
+.bottom-nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.bottom-nav a.active {
+    color: var(--orange);
+}
+
+/* Login Page Styles (Existing) */
+.app.login-page {
+    background-color: var(--background-color);
+}
+
+.login-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-header {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    color: var(--white);
+    position: relative;
+}
+
+.clock-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--white);
+    background: rgba(255, 255, 255, 0.1);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-header h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.student-illustration {
+    width: 200px;
+    height: 200px;
+    margin-top: 2rem;
+}
+
+.student-illustration img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    opacity: 0.8;
+}
+
+.login-form {
+    background: var(--white);
+    border-radius: 30px 30px 0 0;
+    padding: 2rem;
+}
+
+.form-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.tab-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.tab-buttons button {
+    background: none;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    color: var(--gray-light);
+    cursor: pointer;
+}
+
+.tab-buttons button.active {
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+.form-header h2 {
+    color: var(--text-color);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid var(--gray-light);
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.login-btn {
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--orange);
+    color: var(--white);
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 1rem;
+}
+
+.login-btn:hover {
+    background-color: #e67e00;
+}
+
+.form-footer {
+    text-align: center;
+}
+
+.forgot-password {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+/* Quiz Rank Page Styles */
+.time-tabs {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+    position: relative;
+    background: var(--purple);
+    padding: 1rem;
+    border-radius: 15px;
+}
+
+.time-tabs button {
+    background: none;
+    border: none;
+    color: var(--white);
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    opacity: 0.7;
+}
+
+.time-tabs button.active {
+    opacity: 1;
+    font-weight: bold;
+}
+
+.rank-count {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.2);
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    color: var(--white);
+}
+
+.podium {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 2rem 0;
+    padding: 0 1rem;
+    height: 200px;
+}
+
+.podium-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0.5rem;
+}
+
+.podium-item .avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+}
+
+.podium-item .avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.podium-item .position {
+    background: var(--purple);
+    color: var(--white);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+}
+
+.podium-item .points {
+    color: var(--text-color);
+    font-size: 0.9rem;
+}
+
+.podium-item.first {
+    transform: scale(1.2);
+}
+
+.podium-item.first .avatar {
+    width: 70px;
+    height: 70px;
+}
+
+.rank-list {
+    margin-top: 2rem;
+}
+
+.rank-item {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid var(--gray-light);
+}
+
+.rank-position {
+    width: 40px;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+.rank-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 1rem;
+}
+
+.rank-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.rank-name {
+    flex: 1;
+    color: var(--text-color);
+}
+
+.rank-points {
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+/* PDFs Page Styles */
+.pdf-list {
+    margin-top: 1rem;
+}
+
+.pdf-item {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background: #f5f6fa;
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+}
+
+.pdf-item i.fa-file-pdf {
+    color: var(--red);
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+
+.pdf-name {
+    flex: 1;
+    color: var(--text-color);
+}
+
+.download-btn {
+    background: none;
+    border: none;
+    color: var(--text-color);
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+.download-btn:hover {
+    color: var(--primary-color);
+}

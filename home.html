@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyHub - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="app home-page">
+        <header class="top-bar">
+            <button class="menu-btn"><i class="fas fa-bars"></i></button>
+            <div class="logo"><i class="fas fa-book"></i></div>
+            <button class="back-btn" onclick="window.location.href='index.html'"><i class="fas fa-arrow-left"></i></button>
+        </header>
+
+        <div class="content">
+            <h1 class="welcome-text">Seja Bem vindo<br>CEFETIANO !!!</h1>
+            
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Buscar...">
+            </div>
+
+            <nav class="nav-tabs">
+                <a href="home.html" class="active">Turmas</a>
+                <a href="challenges.html">Desafios</a>
+                <a href="quiz-rank.html">Quiz</a>
+                <a href="pdfs.html">PDFs</a>
+            </nav>
+
+            <div class="courses-grid">
+                <div class="course-card">
+                    <div class="course-icon">
+                        <img src="https://cdn-icons-png.flaticon.com/512/3771/3771518.png" alt="Cálculo">
+                    </div>
+                    <h3>Cálculo 1</h3>
+                    <button class="enter-btn">Entrar</button>
+                </div>
+                
+                <div class="course-card">
+                    <div class="course-icon">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1005/1005141.png" alt="Programação">
+                    </div>
+                    <h3>Prog 1</h3>
+                    <button class="enter-btn">Entrar</button>
+                </div>
+            </div>
+        </div>
+
+        <nav class="bottom-nav">
+            <a href="home.html" class="active"><i class="fas fa-home"></i></a>
+            <a href="favorites.html"><i class="far fa-heart"></i></a>
+            <a href="history.html"><i class="fas fa-history"></i></a>
+            <a href="profile.html"><i class="far fa-user"></i></a>
+        </nav>
+    </div>
+</body>
+</html>

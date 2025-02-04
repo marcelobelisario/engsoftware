@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyHub - Favoritos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="app favorites-page">
+        <header class="top-bar">
+            <button class="menu-btn"><i class="fas fa-bars"></i></button>
+            <div class="logo"><i class="fas fa-book"></i></div>
+            <button class="back-btn" onclick="window.location.href='home.html'"><i class="fas fa-arrow-left"></i></button>
+        </header>
+
+        <div class="content">
+            <h1>Meus Favoritos</h1>
+            
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Buscar favoritos...">
+            </div>
+
+            <div class="favorites-list">
+                <div class="favorite-item">
+                    <div class="favorite-icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <div class="favorite-info">
+                        <h3>Cálculo 1</h3>
+                        <p>Derivadas e Integrais</p>
+                    </div>
+                    <button class="remove-favorite"><i class="fas fa-times"></i></button>
+                </div>
+
+                <div class="favorite-item">
+                    <div class="favorite-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="favorite-info">
+                        <h3>Prog 1</h3>
+                        <p>Estruturas de Repetição</p>
+                    </div>
+                    <button class="remove-favorite"><i class="fas fa-times"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <nav class="bottom-nav">
+            <a href="home.html"><i class="fas fa-home"></i></a>
+            <a href="favorites.html" class="active"><i class="far fa-heart"></i></a>
+            <a href="history.html"><i class="fas fa-history"></i></a>
+            <a href="profile.html"><i class="far fa-user"></i></a>
+        </nav>
+    </div>
+</body>
+</html>
