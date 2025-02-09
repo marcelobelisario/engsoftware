@@ -15,7 +15,7 @@ Projeto de Engenharia de Software II com objetivo de criar e desenvolver uma pag
 ## Lins Úteis
 
 
-*[Apresentação do projeto] (https://www.canva.com/design/DAGc0oHt69M/aSPEo6HG2tqvppUEH1mhXQ/edit?utm_content=DAGc0oHt69M&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+* [Apresentação do Projeto](https://www.canva.com/design/DAGc0oHt69M/aSPEo6HG2tqvppUEH1mhXQ/edit?utm_content=DAGc0oHt69M&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
 
 
