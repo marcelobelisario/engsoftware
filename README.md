@@ -7,9 +7,9 @@ Projeto de Engenharia de Software II com objetivo de criar e desenvolver uma pag
 
 ## Stack utilizada
 
-**Protótipo:** Figma
-**Front-end:** HTML, CSS, JavaScript
-**Modelo de Banco de Dados:** Br Modelo
+- **Protótipo:** Figma
+- **Front-end:** HTML, CSS, JavaScript
+- **Modelo de Banco de Dados:** Br Modelo
 
 
 ## Lins Úteis
